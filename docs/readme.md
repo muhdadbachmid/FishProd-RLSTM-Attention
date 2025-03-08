@@ -182,9 +182,9 @@ Hasil evaluasi model pada data pengujian:
 ### Validasi Silang
 
 Hasil K-Fold Cross-Validation (5 folds):
-- RMSE: 0.0925 ± 0.0715
-- MAE: 0.0550 ± 0.0376
-- Huber Loss: 0.0068 ± 0.0099
+- RMSE: 0.0867 ± 0.0363
+- MAE: 0.0415 ± 0.0091
+- Huber Loss: 0.0044 ± 0.0030
 
 ## 🤝 Kontribusi
 
@@ -196,6 +196,5 @@ Proyek ini dilisensikan di bawah [AGPL-3.0 License](LICENSE).
 
 ## 📞 Kontak
 
-Jika Anda memiliki pertanyaan atau saran, silakan hubungi kami di:
 - Email: alfarisbachmid@gmail.com
 - GitHub: [username](https://github.com/muhdadbachmid)

@@ -1,0 +1,57 @@
+flowchart TD
+    A[Instalasi Dependensi] --> B[Analisis Data & Pra-pemrosesan]
+    
+    subgraph preprocessing[Analisis Data & Pra-pemrosesan]
+        B1[Memuat data CSV & memeriksa tipe data]
+        B2[Membersihkan data, menghapus nilai NaN]
+        B3[Memisahkan fitur X dan target y]
+        B4[Mengisi nilai kosong dengan rata-rata]
+        B5[Seleksi fitur dengan SelectKBest]
+        B6[Normalisasi data dengan MinMaxScaler]
+        B7[Membagi data menjadi train-test]
+        B8[Mengubah format data untuk LSTM]
+        
+        B1 --> B2 --> B3 --> B4 --> B5 --> B6 --> B7 --> B8
+    end
+    
+    preprocessing --> C[Arsitektur Model]
+    
+    subgraph architecture[Arsitektur Model]
+        C1[Input Layer]
+        C2[LSTM Layer]
+        C3[MultiHeadAttention Layer]
+        C4[Residual Connection]
+        C5[Dense Layer]
+        C6[Output Layer]
+        C7[Adam Optimizer & MSE Loss]
+        
+        C1 --> C2
+        C2 --> C3
+        C3 --> C4
+        C2 -.-> C4
+        C4 --> C5
+        C5 --> C6
+        C7 -.-> C6
+    end
+    
+    architecture --> D[Pelatihan Model]
+    
+    D --> E[Evaluasi Model]
+    
+    subgraph evaluation[Evaluasi Model]
+        E1[Hitung RMSE]
+        E2[Hitung MAE]
+        E3[Hitung Huber Loss]
+        E4[Visualisasi Prediksi vs Aktual]
+        
+        E1 & E2 & E3 --> E4
+    end
+    
+    E --> F[Validasi Silang]
+    
+    subgraph cross_validation[Validasi Silang]
+        F1[K-Fold Cross-Validation]
+        F2[Evaluasi Performa Model]
+        
+        F1 --> F2
+    end

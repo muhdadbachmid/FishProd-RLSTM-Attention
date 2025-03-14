@@ -1,7 +1,7 @@
 # Prediksi Produksi Ikan menggunakan LSTM dengan Residual Connection dan Multi-Head Attention
 
 Repositori ini berisi implementasi model prediksi produksi ikan tahunan menggunakan arsitektur LSTM yang ditingkatkan dengan Residual Connection dan Multi-Head Attention. Model ini dikembangkan untuk memprediksi total produksi tahunan berdasarkan data historis produksi ikan dari tahun 2018-2022.
-
+ 
 ## 🔧 Instalasi
 
 ### Prasyarat

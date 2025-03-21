@@ -12,7 +12,7 @@ Repositori ini berisi implementasi model prediksi produksi ikan tahunan mengguna
 - Matplotlib
 - Scikit-learn
 
-### Langkah Instalasi
+### Langkah Instalasi 
 
 1. Klon repositori ini:
 ```

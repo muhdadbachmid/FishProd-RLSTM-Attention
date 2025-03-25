@@ -197,4 +197,4 @@ Proyek ini dilisensikan di bawah [AGPL-3.0 License](LICENSE).
 ## 📞 Kontak
 
 - Email: alfarisbachmid@gmail.com
-- GitHub: [username](https://github.com/muhdadbachmid)
+- GitHub: [muhdadbachmid](https://github.com/muhdadbachmid)
